@@ -1,0 +1,87 @@
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+/* FIRST SITE PAGE */
+
+html body {
+  margin: 0;
+}
+.main-banner {
+  display: grid;
+  justify-content: stretch;
+  align-content: center;
+  grid-template-columns: [col1] 50% [col2] 50%;
+  grid-template-rows: [row1] 2fr [middle-row] 1fr [row2] 2fr; /*2 1 2*/
+  grid-template-areas:
+    "block1 block2"
+    "title-banner title-banner"
+    "block3 block4";
+  height: 100vh;
+}
+
+.main-title {
+  grid-area: title-banner;
+  place-self: center;
+}
+.main-title h1, a{
+  text-decoration: none;
+  font-family: 'droid' serif;
+  color: black;
+  font-size: 2em;
+}
+.hidden-overview {
+  display: none;
+}
+a.site-subject-area{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+}
+a.site-subject-area h1{
+  margin-top: 50px;
+  margin-left: 50px;
+}
+a.law{
+  grid-area: block1;
+  background:
+    linear-gradient(to bottom, rgba(183, 183, 183,0.4), rgba(183, 183, 183, 0.4)),
+    url("https://marvel-live.freetls.fastly.net/canvas/2019/1/d9a029123c3141fd8395f28fbe6b45a1?quality=95&fake=.png");
+  background-size: 100% 100%;
+}
+a.ag {
+  grid-area: block2;
+  background:
+    linear-gradient(to bottom, rgba(4, 249, 0,0.4), rgba(4, 249, 0, 0.4)),
+    url("https://marvel-live.freetls.fastly.net/canvas/2019/1/0c1255e76aab4883aac528c858cc744c?quality=95&fake=.png");
+  background-size: 100% 100%;
+}
+a.sport {
+  grid-area: block3;
+  background:
+    linear-gradient(to bottom, rgba(0, 12, 249,0.4), rgba(0, 12, 249, 0.4)),
+    url("https://marvel-live.freetls.fastly.net/canvas/2019/1/c10cea93faeb4bc9bed9701cf8a4777e?quality=95&fake=.png");
+  background-size: 100% 100%;
+}
+a.travel {
+  grid-area: block4;
+  background:
+    linear-gradient(to bottom, rgba(249, 49, 0,0.4), rgba(249, 49, 0, 0.4)),
+    url("https://marvel-live.freetls.fastly.net/canvas/2019/1/a5e95b0904ea430c9c29664cc5c2e998?quality=95&fake=.png");
+  background-size: 100% 100%;
+}
+.law:hover .hidden-overview, .ag:hover .hidden-overview, .sport:hover .hidden-overview, .travel:hover .hidden-overview {
+  display: block;
+  cursor:pointer;
+  margin-left:  50px;
+  text-decoration: none;
+  font-size: .5em;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}

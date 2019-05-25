@@ -1,0 +1,33 @@
+mmhome will not use base
+
+mmabout will use base footer
+
+all other sites will use base
+-header
+-menu
+-footer
+
+other sub sections
+-articles
+-photos
+
+
+Law is basically it's own special About
+LAW & ABOUT
+-videos
+-heading blocks (with optional subheadings)
+-text
+-text with images
+-images
+-text/images in columns
+
+SPORT & TRAVEL
+-main feature blog (blog field; pic, title, date, blurb + LEDE)
+-previous blogs (block list of chosen blogs)(blog field; pic, title, date, blurb)
+-photo gallery preview
+-PAGE: other publications (articles from other places) (blog field; pic, title, date, blurb)
+-PAGE: archive page
+-PAGE: blog
+-PAGE: Photo Gallery (photo block: preview, caption, date, photographer + credits) (enlarging photos just an overlay rather than another page)
+
+Agriculture.... either like LAW or TRAVEL & SPORT? so an about...with blog???
